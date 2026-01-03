@@ -19,9 +19,6 @@ def string_reverse(s):
         return s[::-1]
 
 
-result1 = string_reverse("Hello World")
-print("Reversed:", result1)
+print(string_reverse("Hello World"))
 
-
-result2 = string_reverse("Python")
-print("Reversed:", result2)
+print(string_reverse("Python"))
