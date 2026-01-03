@@ -31,6 +31,3 @@ def swap(x, y):
 print(swap("Apple", 10))
 print(swap(-9, 17))
 
-
-result2 = swap(-9, 17)       # Output: Swapped values: x = 17 , y = -9
-print("Result 2:", result2)  # Output: None (function prints, doesn't return swapped values)
