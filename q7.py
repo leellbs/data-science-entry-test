@@ -18,4 +18,8 @@ class Car:
 
     def describe_car(self):
         print(f"{self.year} {self.make} {self.model}")
+        
+my_car = Car("Toyota", "Corolla", 2020)
+
+my_car.describe_car()
 
