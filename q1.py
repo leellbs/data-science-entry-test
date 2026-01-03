@@ -16,7 +16,9 @@
 
 
 def swap(x, y):
-    if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
+#    if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
+#        return -1
+    if not (type(x) in (int, float) and type(y) in (int, float)):
         return -1
 
     # Swap using arithmetic (no temporary variable)
@@ -24,11 +26,10 @@ def swap(x, y):
     y = x - y
     x = x - y
 
-    print("Swapped values: x =", x, ", y =", y)
+    return (x,y)
 
-
-result1 = swap("Apple", 10)  # Output: No values to swap
-print("Result 1:", result1)  # Output: -1 since both x and y are neither int nor float
+print(swap("Apple", 10))
+print(swap(-9, 17))
 
 
 result2 = swap(-9, 17)       # Output: Swapped values: x = 17 , y = -9
