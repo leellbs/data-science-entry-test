@@ -17,15 +17,13 @@
 def update_dictionary(dct, key, value):
     if key in dct:
         print(f"Original value for '{key}': {dct[key]}")
-	# print("Original value for '{}': {}".format(key, dct[key]))
-	# print("Original value for '" + str(key) + "': " + str(dct[key]))
     dct[key] = value
     return dct
 
 
 result1 = update_dictionary({}, "name", "Alice")
-print("Updated dictionary:", result1)
-
+print("Updated dictionary:", result1, "\n")
 
 result2 = update_dictionary({"age": 25}, "age", 26)
 print("Updated dictionary:", result2)
+
